@@ -19,6 +19,9 @@ const port = 8080;
 // Cors
 var cors = require("cors");
 // app.use(cors({ credentials: true, origin: "https://ktpm-fe.vercel.app/" }));
+app.use(cors({
+    origin: '*'
+}));
 // app.use((req, res, next) => {
 //   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
 //   res.setHeader(
